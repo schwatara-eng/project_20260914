@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+
+    <h2>JavaScript Numbers</h2>
+
+    <p>Floating point arithmetic is not always 100% accurate:</p>
+    <p id="demo1"></p>
+
+    <p>But it helps to multiply and divide:</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        const d = new Date();
+        console.log(d)
+        
+        let x = 0.2 + 0.1;
+        document.getElementById("demo1").innerHTML = "0.2 + 0.1 = " + x;
+        let y = (0.2 * 10 + 0.1 * 10) / 10;
+        document.getElementById("demo2").innerHTML = "0.2 + 0.1 = " + y;
+    </script>
+
+
+
+</body>
+
+</html>

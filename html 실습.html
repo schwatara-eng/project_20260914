@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>서울 인구 데이터 뉴스</title>
+
+    <style>
+        h1 {
+            color: #104bc9;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: xx-large;
+            font-weight: 100;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .table,
+        td,
+        th {
+            width: 400px;
+            padding: 8px 16px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: medium;
+        }
+
+        .p {
+            font-color: violet
+        }
+    </style>
+</head>
+
+<br>
+
+<body>
+<h1>서울 인구 데이터 뉴스 Seoul </h1>
+<article>
+    <h1>청년 인구, 5년 새 8.2% 감소</h1>
+    <p><strong>서울 청년 인구</strong>가 지속적으로 감소했습니다.</p>
+    <p><em>자료: 국가통계포털</em></p>
+</article>
+<h2>핵심 발견</h2>
+
+<ul>
+    <li>20대 인구 감소 폭이 가장 큽니다.</li>
+    <li>외곽 지역의 감소율이 높습니다.</li>
+</ul>
+<a href="https://kosis.kr">원자료 확인</a>
+<br>
+<br>
+<table>
+    <caption>2024~2026년 서울 청년 인구</caption>
+    <thead>
+        <tr>
+            <th scope="col">연도</th>
+            <th scope="col">인구</th>
+            <th scope="col">증감률</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">2024</th>
+            <td>2,410,000명</td>
+            <td>-2.1%</td>
+        </tr>
+        <tr>
+            <th scope="row">2025</th>
+            <td>2,350,000명</td>
+            <td>-2.5%</td>
+        </tr>
+        <tr>
+            <th scope="row">2026</th>
+            <td>2,290,000명</td>
+            <td>-2.6%</td>
+        </tr>
+    </tbody>
+</table>
+<figure>
+    <img src="images/population-chart.png" alt="2024년부터 2026년까지 서울 청년 인구가 감소하는 선그래프">
+    <figcaption>서울 청년 인구 추이. 자료: 국가통계포털</figcaption>
+</figure>
+<form id="filter-form">
+    <label for="keyword">검색어</label>
+    <input id="keyword" name="keyword" type="search">
+    <label for="region">지역</label>
+    <select id="region" name="region">
+        <option value="all">전체</option>
+        <option value="seoul">서울</option>
+    </select>
+    <button type="submit">적용</button>
+</form>
+<section class="metrics" aria-label="핵심 지표">
+    <article class="metric">
+        <h2 style="color:blue">청년 인구</h2>
+        <strong>229만 명</strong>
+        <p>전년 대비 <span style="color:red;"> 2.6%</span> 감소</p>
+    </article>
+</section>
+<section aria-labelledby="chart-title">
+    <div id="chart" role="img" aria-label="연도별 청년 인구 차트"></div>
+</section>
+
+<header class="site-header"><a href="/">DATA NEWS</a></header>
+<main class="container">
+    <article>
+        <header class="article-header">
+            <p>지역별 데이터를 탐색해 변화의 흐름을 확인하세요.</p>
+        </header>
+        <section class="metrics" aria-label="핵심 지표">
+            <article class="metric">
+                <h2>2026년 인구</h2><strong>229만 명</strong>
+            </article>
+            <article class="metric">
+                <h2>전년 대비</h2><strong>-2.6%</strong>
+            </article>
+            <article class="metric">
+                <h2>5년 누적</h2><strong>-8.2%</strong>
+            </article>
+        </section>
+        <section>
+            <h3>데이터</h3>
+            <div id="result"></div>
+        </section>
+        <footer>
+            <p>자료: 국가통계포털 · 최종 갱신 2026-08-31</p>
+        </footer>
+    </article>
+</main>
+</body>
+
+</html>

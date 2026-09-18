@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 뉴스</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        .news-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .news-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>오늘의 뉴스</h1>
+
+    <div class="news-list">
+
+        <div class="news-card">
+            <h2>첫 번째 뉴스</h2>
+            <p>첫 번째 뉴스의 간단한 설명입니다.</p>
+            <button onclick="showNews()">기사 보기</button>
+        </div>
+
+        <div class="news-card">
+            <h2>두 번째 뉴스</h2>
+            <p>두 번째 뉴스의 간단한 설명입니다.</p>
+            <button onclick="showNews()">기사 보기</button>
+        </div>
+
+        <div class="news-card">
+            <h2>세 번째 뉴스</h2>
+            <p>세 번째 뉴스의 간단한 설명입니다.</p>
+            <button onclick="showNews()">기사 보기</button>
+        </div>
+
+    </div>
+
+    <script>
+        function showNews() {
+            console.log("뉴스 버튼을 눌렀습니다.");
+        }
+    </script>
+
+</body>
+
+</html>

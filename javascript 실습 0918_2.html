@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>안녕하세요</h1>
+    <p>기본 HTML 문서입니다.</p>
+
+    <script>
+
+// C : 칩,반도체 등
+// Java : 게임 등
+// C# : 공장
+// C++ : 자동차 등
+// Javascript : 웹
+// Python : 
+
+    v1=10
+    var v2=10 // 같은 이름으로 재선언, 값변경 가능
+    var v2;
+        // i 같은 이름들 계속 바꿔 쓰기 어려우므로 var를 써서 재사용 가능하게 하는 것
+
+    let v3=10 // 같은 이름으로 재선언 안 됨
+    // let v3; // 이러면 안 됨
+    const v4=10 // 값변경 불가능한 상수. 고정해서 쓰고 싶을 때 
+    v3 = "abc"
+    // v4="ejkim" // 값변경 불가능한 상수
+    var v5;
+    let v6;
+    // const v7; // 값 없이 선언 불가능
+    console.log(v5); //undfined
+    console.log(v6); //undfined
+
+
+// 구구단
+    for(let dan=2; dan < 10; dan++) { //바깥쪽반복(단)
+    console.log(dan+"단")
+    for(let i=1; i<10; i++) 
+        console.log(dan + "*" + i + "=" + dan*i) 
+        // 안쪽반복. +는 연결자. 사칙연산. --- 2*1=2, 2*2=4, ...
+    console.log("===")
+    console.log("구구단 끝")
+    // console.log(dan)
+    }
+
+
+    </script>
+
+</body>
+
+</html>

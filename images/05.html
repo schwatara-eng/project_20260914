@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <iframe>
+    </iframe>
+    <ul style="color:red">
+        <li>대한민국 도시</li>
+    </ul>
+    <ol start="2" type="I">
+        <li>서울</li>
+        <li>대전</li>
+        <li>대구</li>
+        <li>부산</li>
+        <li>전주</li>
+    </ol>
+
+    <input class="styled" type="button" value="Add to favorites" />
+    <br> <br>
+    <fieldset>
+        <legend>Choose your monster's features:</legend>
+
+        <div>
+            <input type="checkbox" id="scales" name="scales" />
+            <label for="scales">Scales</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="horns" name="horns" />
+            <label for="horns">Horns</label>
+        </div>
+        <br>
+    </fieldset>
+    <br>
+    <p>Choose your colors:</p>
+    <div>
+        <input type="color" id="foreground" name="foreground" value="#e66465" />
+        <label for="foreground">Foreground color</label>
+    </div>
+    <div>
+        <input type="color" id="background" name="background" value="oklab(50% 0.1 0.1 / 0.5)" colorspace="display-p3"
+            alpha />
+        <label for="background">Background color</label>
+    </div>
+    <br><br>
+    <label for="meeting-time">Choose a time for your appointment:</label>
+
+    <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00"
+        max="2018-06-14T00:00" />
+
+
+
+    <form action="" method="get" class="form-example">
+        <div class="form-example">
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name" required />
+        </div>
+        <div class="form-example">
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email" required />
+        </div>
+        <div class="form-example">
+            <input type="submit" value="Subscribe!" />
+        </div>
+    </form>
+
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>안녕하세요</h1>
+    <p>기본 HTML 문서입니다.</p>
+
+
+    <script>
+        // JavaScript 작성
+
+
+        /*
+    아래 문자열을 변수 text에 저장하세요.
+    "Seoul,Busan,Jeju"
+    다음을 console.log()로 출력하세요.
+    전체 글자 수
+    쉼표 ,를 기준으로 나눈 배열
+    Seoul만 substring()으로 잘라서 출력
+    모두 소문자로 변경해서 출력
+        */
+        text = "Seoul,Busan,Jeju"
+        console.log(text.length);
+        console.log(text.split(","));
+        console.log(text.substring(0, 5));
+
+
+        /*
+    다음 숫자를 이용하세요.
+    let num = -37.8;
+    Math를 사용해서 다음을 출력하세요.
+    절댓값
+    반올림
+    내림
+    올림
+    추가로 아래 숫자 중 최댓값과 최솟값도 구하세요.
+        */
+        let num = -37.8;
+
+        console.log(Math.abs(num)); //절대값
+        console.log(Math.round(num)); //반올림
+        console.log(Math.floor(num)); //내림
+        console.log(Math.ceil(num)); //올림
+        console.log(Math.max(12, 38, 4, 91, 27)); //아래 숫자 중 최대값
+        console.log(Math.min(12, 38, 4, 91, 27)); //아래 숫자 중 최소값
+
+
+        /*
+다음 코드가 있습니다.
+let a = "20";
+let b = 5;
+다음을 각각 출력하세요.
+a + b
+그리고 a를 숫자로 변환한 후:
+Number(a) + b
+도 출력하세요.
+두 결과가 왜 다른지도 한 줄 주석으로 써보세요.
+        */
+        let a = "20";
+        let b = 5;
+        console.log(a + b);
+        console.log(Number(a) + b);
+
+
+        /*
+변수:
+let score = 78;
+조건은 다음과 같습니다.
+90 이상 → "A"
+80 이상 → "B"
+70 이상 → "C"
+그 미만 → "D"
+if ~ else if ~ else를 이용해서 학점을 Console에 출력하세요.
+현재 값 78의 결과는:
+C
+가 나와야 합니다.
+        */
+        let score = 78;
+
+        if (score >= 90) {
+            console.log("A");
+        } else if (score >= 80) {
+            console.log("B");
+        } else if (score >= 70) {
+            console.log("C");
+        } else {
+            console.log("D");
+        }
+
+
+        /*
+        다음 배열을 만드세요.
+        let cities = ["Seoul", "Busan", "Daejeon", "Jeju"];
+        for문을 이용해서 모든 도시를 하나씩 출력하세요.
+        결과:
+        Seoul
+        Busan
+        Daejeon
+        Jeju
+        조건:
+        for (let i = 0; i < cities.length; i++)
+        구조를 이용해보세요.
+        */
+        let cities = ["Seoul", "Busan", "Daejeon", "Jeju"];
+
+        for (let i = 0; i < cities.length; i++) {
+            console.log(cities[i]);
+        }
+
+
+        /*
+        다음 정보를 객체 weather에 저장하세요.
+        city → Seoul
+        temperature → 27
+        rain → false
+        그다음 다음 값을 각각 출력하세요.
+        Seoul
+        27
+        false
+        두 가지 방법을 모두 사용해보세요.
+        weather.city
+        weather["city"]
+        */
+        let weather1 = {
+            city: "Seoul",
+            temperature: 27,
+            rain: false
+        };
+
+        console.log(weather1.city);
+        console.log(weather1.temperature);
+        console.log(weather1.rain);
+
+        console.log(weather1["city"]);
+        console.log(weather1["temperature"]);
+        console.log(weather1["rain"]);
+
+        /*
+    아래 객체를 사용하세요.
+    let person = {
+    name: "홍길동",
+    age: 30,
+    city: "Seoul"
+    };
+    for...in으로 객체의 모든 내용을 출력하세요.
+    원하는 결과:
+    name
+    홍길동
+    age
+    30
+    city
+    Seoul
+    힌트:
+    for (let key in person) {
+    console.log(key);
+    console.log(person[key]);
+    }
+        */
+        let person = {
+            name: "홍길동",
+            age: 30,
+            city: "Seoul"
+        };
+
+        for (let key in person) {
+            console.log(key);
+            console.log(person[key]);
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

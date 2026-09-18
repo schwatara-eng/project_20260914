@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>안녕하세요</h1>
+    <p>기본 HTML 문서입니다.</p>
+
+    <script>
+        v1=10
+        v2=20
+        v3= {
+            k1: 30,
+            k2: 31
+        }; // 세미콜론을 찍어도 되지만 기호로 끝날 경우 잘 안 찍음
+
+        for(k in v3){
+            console.log(k)
+        } // 여기 세미콜론은 찍지 않음. 기호(중괄호)
+
+
+var arr = ["apple", "banana", function() {
+    console.log("배열의2번index에함수입니다.");
+}];
+
+for (var i in arr) {
+    if (typeof(arr[i]) == "function") {
+        arr[i]();
+    } else {
+        console.log(arr[i]);
+    }
+}
+
+// 구구단
+for(dan = 2; dan <10; dan++) { //바깥쪽반복(단)
+    console.log(dan+"단")
+    for(i=1; i<10; i++) 
+        console.log(dan + "*" + i + "=" + dan*i) 
+        // 안쪽반복. +는 연결자. 사칙연산. --- 2*1=2, 2*2=4, ...
+    console.log("===")
+    console.log("구구단 끝")
+}
+
+// C : 칩,반도체 등
+// Java : 게임 등
+// C# : 공장
+// C++ : 자동차 등
+// Javascript : 웹
+// Python : 
+
+    v1=10
+    var v2=10
+    let v5=10
+    const v4=10 // 값 재할당 불가능한 상수. 고정해서 쓰고 싶을 때 
+    v1 = "abc"
+    v4="ejkim" // 값 재할당 불가능한 상수
+
+
+
+
+    </script>
+
+</body>
+
+</html>
